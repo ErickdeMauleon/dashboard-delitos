@@ -96,7 +96,7 @@ st.pyplot(fig, use_container_width=True)
 
 st.subheader("Área metropolitana del Valle de México")
 
-l, u = (1.71e6, 1.82e6)
+l, u = (1.70e6, 1.81e6)
 ax.set_xbound(lower=l, upper=u)
 l, u = (2.14e6, 2.22e6)
 ax.set_ybound(lower=l, upper=u)

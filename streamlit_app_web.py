@@ -13,6 +13,7 @@ colors.append('#000000')
 
 custom_cmap = mcolors.ListedColormap(colors)
 
+st.set_page_config(layout='wide', initial_sidebar_state='expanded', page_title="Delitos en México")
 
 if "delitos" not in st.session_state:
     st.session_state["delitos"] = pd.read_csv("Data/delitos_mensuales.csv", encoding="utf8")

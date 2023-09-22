@@ -34,10 +34,13 @@ if "delitos" not in st.session_state:
 df = st.session_state["delitos"].copy()
 delitos = df.columns[3:].values.tolist()
 
+url = "https://github.com/ErickdeMauleon/dashboard-delitos"
 st.title("Delitos en México")
 st.write("""Datos abiertos de la Secretaría de Seguridad y Protección Ciudadana, actualizados a %s.\n
 Datos del censo de población del INEGI, actualizados a 2020.\n
-Delitos por cada 100 mil habitantes tomando años móviles.""" % str(df["Fecha"].max())[:7])
+Delitos por cada 100 mil habitantes tomando años móviles.\n
+Repositorio en [GitHub](%s)
+""" % (str(df["Fecha"].max())[:7]), url)
 
 st.sidebar.title("Delitos en México")
 
